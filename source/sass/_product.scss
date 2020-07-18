@@ -1,0 +1,224 @@
+@import 'variables';
+
+.product {
+    min-height: 725px;
+
+    &__container {
+				padding-top: 100px;
+				position: relative;
+				
+				&::after {
+					content: '';
+					display: block;
+					position: absolute;
+					width: 100%;
+					height: 23px;
+					bottom: -80px;
+					background-image: url('../img/icons/grey-zigzag.png');
+				}
+        }
+    
+
+    &__h {
+        position: absolute;
+        padding-left: 137px;
+        padding-top: 41px;
+        font-size: 53px !important;
+     }
+
+    &__about {
+        width: 297px;
+        min-height: 483px;
+        padding-right: 40px;
+    }
+
+    &__cont {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__oftheweek {
+        text-transform: uppercase;
+        font-size: 17px;
+        line-height: 17px;
+        color: $main-color;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    &__info {
+        padding-top: 150px;
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    &__table {
+        padding-top: 40px;
+        font-size: 15px;
+        width: 100%;
+
+        .last-td {
+            border-bottom: none;
+        }
+
+        td {
+            width: 98px;
+            padding-top: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid $light-grey;
+        }
+    }
+
+    &__img {
+        width: 500px;
+    }
+
+    &__price {
+        display: block;
+        text-align: center;
+        font-size: 21px;
+        font-weight: bold;
+        padding-top: 95px;
+    }
+
+    &__btn {
+			margin-top: 28px;
+			width: 100%;
+    }
+    }
+    
+    @media only screen and (max-width: 1083px) {
+        .product {
+            .container {
+                padding-top: 25px;
+            }
+
+            &__oftheweek {
+                position: relative;
+                left: 740px;
+                padding-top: 27px;
+            }
+
+            &__h {
+                padding-left: 67px;
+                padding-top: 0;
+            }
+
+            &__about {
+                padding-right: 130px;
+            }
+
+            &__photo {
+                padding-top: 195px;
+            }
+
+            &__img {
+                width: 334px;
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: 883px) {
+        .product {
+            &__h {
+                padding-left: 12px;
+            }
+
+            &__about {
+                margin-left: -53px;
+                padding-right: 30px;
+                width: 297px;
+            }
+
+            &__price {
+                padding-top: 51px;
+            }
+
+            &__photo {
+                padding-top: 157px;
+            }
+
+            &__oftheweek {
+                left: 591px;
+            }
+        }
+    }
+
+
+    @media only screen and (max-width: 706px) {
+        .product {
+
+            height: 980px;
+
+            &__cont {
+                flex-direction: column;
+            }
+            &__h {
+                font-size: 25px !important;
+                padding-left: 32px;
+            }
+
+            &__oftheweek {
+                left: -136px;
+                padding-top: 56px;
+            }
+
+            &__info {
+                padding-top: 46px;
+            }
+
+
+            &__about {
+                margin-left: 0;
+                padding-right: 0;
+                padding-left: 32px;
+            }
+
+            &__price-btn {
+                left: 6%;
+                position: relative;
+                top: 459px;
+            }
+
+            &__photo {
+                position: relative;
+                bottom: 333px;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__container::after {
+                bottom: 165px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .product {
+
+            &__h {
+                padding-left: 8px;
+            }
+            &__oftheweek {
+                left: -217px;
+            }
+
+            &__container {
+                &::after {
+                    bottom: 115px;
+                }
+            }
+
+            &__price-btn {
+                top: 357px;
+                left: 0;
+            }
+
+            &__cont {
+                align-items: flex-end;
+            }
+        }
+    } 

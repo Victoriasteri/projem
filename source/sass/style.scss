@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url('../fonts/*.ttf');
+}
+
+@import 'header';
+@import 'variables';
+@import 'product';
+@import 'about';
+@import 'btn';
+@import 'review';
+@import 'contacts';
+@import 'footer';
+@import 'burger';
+@import 'catalog';
+@import 'product-item';
+@import 'process';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.big-h {
+  font-size: 53px;
+	line-height: 75px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1083px) {
+  .container {
+    width: 850px;
+  }
+}
+
+@media only screen and (max-width: 883px) {
+  .container {
+    width: 668px;
+  }
+}
+
+@media only screen and (max-width: 706px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 300px;
+  }
+}
+
+

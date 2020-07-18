@@ -1,0 +1,470 @@
+@import 'variables';
+
+.header {
+	min-height: 834px;
+	&_catalog {
+		min-height: 300px;
+	}
+
+	.burger {
+		display: none;
+	}
+
+    &__nav {
+			height: 89px;
+		}
+
+		&__menu {
+			display: flex;
+		}
+
+		&__logo-link {
+			position: absolute;
+			left: 44%;
+		}
+
+
+
+		&__items {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		&__items {
+			list-style: none;
+			font-size: 17px;
+			font-weight: bold;
+			display: flex;
+			z-index: 2;
+			width: 100%;
+			padding-top: 64px;
+		}
+
+		&__item {
+			display: block;
+			a {
+				color: #000;
+				text-decoration: none;
+				display: block;
+			}
+
+			&:nth-child(2) {
+				padding-right: 215px;
+			}
+		}
+
+		&__tab-logo {
+			display: none;
+		} 
+
+		&__search {
+			padding-left: 56px;
+		}
+
+		&__cart {
+			padding-right: 14px;
+		}
+
+		
+		&__search-text {
+			display: none;
+		}
+
+		&__input {
+			display: none;
+		}
+
+		&__subnav-items {
+			display: flex;
+			justify-content: space-between;
+			width: 318px;
+
+			&:last-child {
+				margin-right: -10px;
+			}
+		}
+
+		&__subnav-item {
+			display: block;
+			color: #000;
+			text-decoration: none;
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+		&__subnav-wrapper {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 20px;
+		}
+
+		&__delivery {
+			font-weight: 300;
+			font-size: 15px;
+		}
+
+
+
+
+
+    &__intro {
+			min-height: 747px;
+			background: url('../img/hero-desktop.jpg') center/cover no-repeat;
+			position: relative;
+
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 30px;
+				bottom: 0px;
+				background-image: url('../img/icons/zigzag.png');
+			}
+
+
+			&_catalog {
+				min-height: 265px;
+				background: #f1f1f1;
+				margin-bottom: 125px;
+			}
+		}
+		
+		&__heading {
+			padding-top: 200px;
+			width: 669px;
+			margin: 0 auto;
+
+			&_catalog {
+				padding-top: 55px;
+			}
+		}
+
+		&__categories {
+			height: 119px;
+			width: 100%;
+			display: flex;
+			padding-top: 280px;
+
+			h3 {
+				padding: 18px 0 0 32px;
+			}
+		}
+
+		&__interior {
+			background: $main-color;
+			height: 119px;
+			flex: 1;
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		&__toys {
+			height: 119px;
+			background: $toys-color;
+			flex: 1;color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		&__wrap {
+			display: flex;
+		}
+
+		&__categor-svg {
+			padding-left: 300px;
+			padding-top: 13px;
+		}
+		
+
+}
+
+@media only screen and (max-width: 1083px) {
+	.header {
+		&__interior, &__toys {
+			width: 410px;
+		}
+
+		&__categor-svg {
+			padding-left: 193px;
+		}
+
+		&__item {
+			&:nth-child(2) {
+				padding-right: 25px;
+			}
+		}
+
+}
+}
+
+
+
+@media only screen and (max-width: 883px) {
+	.header {
+
+		&__tab-logo {
+			display: block;
+		}
+
+		&__logo-link {
+			display: none;
+		}
+		&__logo {
+			position: relative;
+			top: 13%;
+		}
+
+		&__cart {
+			position: relative;
+			right: 53px;
+			bottom: 22px;
+		}
+
+		&__basket {
+			padding-right: 2px;
+			position: relative;
+			right: 39px;
+			bottom: 24px;
+		}
+
+		&__subnav-items {
+			display: none;
+		}
+
+		&__delivery {
+			padding-left: 410px;
+		}
+
+		&__items {
+			font-size: 15px;
+			padding-top: 0;
+		}
+
+		&__search-item {
+			padding-bottom: 44px;
+    		right: 95px;
+    		position: relative;
+		}
+
+		&__tab-menu {
+			margin-top: 109px;
+			z-index: 2;
+			position: relative;
+			left: -109px;
+
+			&:nth-child(2){
+				padding-left: 14px;
+			}
+		}
+
+		&__heading {
+			font-size: 43px !important;
+			width: 512px;
+			line-height: 50px !important;
+		}
+
+		&__categor-svg {
+			padding-left: 104px;
+		}
+
+		&__wrap {
+			width: 330px;
+		}
+} }
+
+@media only screen and (max-width: 706px) {
+	.header {
+
+		.container {
+			width: 100%;
+			margin: 0;
+		}
+
+		.burger {
+			display: flex;
+		}
+		&__heading {
+			width: 260px;
+    		font-size: 27px !important;
+    		line-height: 38px !important;
+			}
+
+			&__subnav-item {
+				display: none;
+				margin: 0;
+			}
+
+			&__items {
+				margin-top: 89px;
+				position: absolute;
+    			background: #fff;
+				height: 395px;
+				display: flex;
+				flex-direction: column;
+				display: none;
+				}
+
+				&__item {
+					padding-top: 18px;
+					width: 100%;
+					border-bottom: 2px solid #f2f2f2;
+					a {
+						position: relative;
+						left: 35%;
+						padding-bottom: 33px;
+					}
+
+					&:first-child {
+						padding-top: 44px;
+						border-top: 2px solid #f2f2f2;
+					}
+				}
+
+
+			&__tab-menu {
+				left: 0;
+				margin: 0;
+
+				&:nth-child(2) {
+					padding: 0;
+				}
+			}
+
+			&__desk-logo {
+				display: none;
+			}
+
+			&__logo {
+				padding-bottom: 0;
+			}
+
+			&__tab-logo {
+				left: 41%;
+				position: relative;
+				padding-top: 15px;
+			}
+
+			&__search {
+				padding: 0;
+			}
+
+			&__search-text {
+				display: inline-block;
+				padding-left: 17px;
+			}
+
+			&__search-item {
+				padding: 0;
+				right: 0; 
+				a {
+					left: 25%;
+				}
+			}
+
+			&__basket {
+				bottom: 0;
+			}
+
+			&__basket-item {
+				padding: 0;
+			}
+
+			&__cart {
+				right: 40px;
+				bottom: -3px;
+			}
+
+			.none {
+				display: none;
+			}
+
+			&__heading {
+				padding-top: 107px;
+
+				&_catalog {
+					padding-top: 50px;
+				}
+			}
+
+			&__categories {
+				flex-direction: column;
+				padding-top: 349px;
+			}
+
+			&__wrap {
+				width: 100%;
+			}
+
+			&__intro {
+				&::after {
+					display: none;
+				}
+
+				&_catalog {
+					min-height: 180px;
+				}
+			}
+
+			&__categor-svg {
+				padding-left: 189px;
+			}
+
+			&__interior {
+				.header__categor-svg {
+					padding-left: 170px;
+				}
+			}
+		}
+		}
+
+		@media only screen and (max-width: 570px) {
+			.header {
+				&__item {
+					a {
+						left: 30%;
+					}
+				}
+
+				&__search-item {
+					a{
+						left: 18%;
+					}
+				}
+			}
+		}
+
+		@media only screen and (max-width: 480px) {
+			.header {
+				&__tab-logo {
+					left: 37%;
+				}
+			}
+		} 
+
+
+		@media only screen and (max-width: 400px) {
+			.header {
+				&__categor-svg {
+					padding-left: 74px;
+				}
+				&__interior {
+					.header__categor-svg {
+						padding-left: 55px;
+					}
+				}
+			}
+
+		}
+
+		@media only screen and (max-width: 400px) {
+			.header {
+				&__tab-logo {
+					left: 30%;
+				}
+			}
+		}
+	
+

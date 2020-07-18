@@ -1,0 +1,181 @@
+.process {
+    min-height: 456px;
+    margin-bottom: 106px;
+
+    &__wrap {
+        display: flex;
+        height: 100%;
+        border: 2px solid #f2f2f2;
+    }
+
+    &__video {
+        order: 1;
+        align-self: flex-start;
+        width: 679px;
+        height: 455px;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 79px;
+            width: 101px;
+            background: url('../img/icons/play.png');
+            top: 41%;
+            left: 42%;
+        }
+         iframe {
+            height: 455px;
+            width: 680px;
+        }
+    }
+
+    &__heading {
+        order: 2;
+        width: 230px;
+        margin-left: 82px;
+    }
+
+    &__h {
+        padding-top: 60px;
+        position: relative;
+        font-size: 22px;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 22px;
+            right: 140px;
+            bottom: 67px;
+            background: url('../img/icons/video.png');
+        }
+    }
+
+    &__descr {
+        order: 3;
+        align-self: flex-end;
+        width: 400px;
+        height: 187px;
+        margin-left: -185px;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 74px;
+        margin-top: -91px;
+    }
+
+    &__btn {
+        width: 78%;
+    }
+
+    &__image {
+        background: url('../img/video-desktop.jpg');
+        z-index: 3;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 1083px) {
+    .process {
+
+        &__wrap {
+            flex-direction: column;
+        }
+        &__heading {
+            order: 1;
+        }
+
+        &__h::before {
+            right: 246px;
+            bottom: 22px;
+        }
+
+        &__heading {
+            margin: 0 auto 40px auto;
+        }
+
+        &__video {
+            width: 100%;
+            margin: 0 auto;
+
+            iframe {
+                width: 100%;
+            }
+        }
+
+        &__descr {
+            width: 420px;
+            padding-top: 110px;
+            margin: 0 auto;
+        }
+
+        &__text {
+            margin-bottom: 75px;
+        }
+
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 883px) {
+    .process {
+        &__heading {
+            padding-left: 36px;
+            &::after {
+                right: 218px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 706px) {
+    .process {
+        &__heading {
+            padding-left: 97px;
+        }
+
+        &__video {
+            &::after {
+                top: 29%;
+                left: 38%;
+            }
+            iframe {
+                height: 334px;
+            }
+        }
+
+        &__descr {
+            padding-top: 0;
+            width: 315px;
+        }
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .process {
+        &__wrap {
+            width: 315px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .process {
+    
+        &__descr {
+            width: 270px;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+}

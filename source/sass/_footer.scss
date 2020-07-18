@@ -1,0 +1,67 @@
+@import 'variables';
+
+.footer {
+    min-height: 143px;
+    background-color: $grey;
+
+
+    &__container {
+			display: flex;
+			justify-content: space-between;
+      padding-top: 60px;
+		}
+		
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+			width: 143px;
+			align-items: baseline;
+		}
+
+		&__created {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			span {
+			font-size: 19px;
+			font-weight: bold;
+			padding-right: 15px;
+			}
+		}
+}
+
+@media only screen and (max-width: 1083px) {
+	.footer {
+		&__wrapper {
+			padding-left: 57px;
+		}
+	}
+}
+
+@media only screen and (max-width: 883px) {
+	.footer {
+		&__container {
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+	}
+}
+
+@media only screen and (max-width: 706px) {
+	.footer {
+		&__logo {
+			display: none;
+		}
+
+		&__container {
+			flex-direction: column;
+			align-items: center;
+			padding-top: 25px;
+		}
+
+		&__wrapper {
+			padding-left: 0;
+			margin-bottom: 30px;
+		}
+	}
+}
