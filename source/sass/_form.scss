@@ -1,0 +1,236 @@
+@import 'variables';
+.form {
+    &__description {
+        width: 678px;
+        font-size: 17px;
+        line-height: 30px;
+        margin-left: 175px;
+        margin-bottom: 55px;
+		}
+
+		//RADIO BUTTONS 
+		
+		&__type {
+			height: 160px;
+		}
+
+		&__radio {
+			&:first-child {
+				margin-bottom: 25px;
+			}
+		}
+
+    &__name {
+        text-transform: uppercase;
+        color: $main-color;
+        font-weight: bold;
+    }
+
+    &__type-radio {
+        padding-left: 151px;
+        margin-top: -24px;
+		}
+		
+		label {
+			font-size: 19px;
+			font-weight: bold;
+		}
+
+		&__type-label {
+			padding-left: 15px;
+			position: relative;
+		}
+
+		input[type="radio"] {
+			display: none;
+		}
+
+		&__type-input + label::before {
+			content: '';
+			display: inline-block;
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			border: 2px solid;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+
+		&__type-label::after {
+			content: '';
+			display: none;
+			position: absolute;
+			left: 27px;
+			top: 2px;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			background: $main-color
+		}
+
+		&__type-input:checked + label::after {
+			display: inline-block;
+			}	
+
+			//CHECKBOXES
+
+			&__color {
+				height: 230px;
+				background-color: #f2f2f2;
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+
+			&__color-name {
+				display: block;
+				margin-left: 150px;
+				margin-top: 63px;
+			}
+
+			&__checkbox-wrap {
+				width: 734px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin-left: 348px;
+			}
+
+			&__checkbox {
+				width: 200px;
+				margin-bottom: 20px;
+			}
+
+			input[type="checkbox"] {
+				display: none;
+			}
+
+			&__color-input + label::before {
+				content: '';
+				display: inline-block;
+				height: 39px;
+				width: 39px;
+				border: 2px solid;
+				vertical-align: middle;
+			}
+
+			&__color-input:checked + label::before {
+				background-image: url('../img/icons/check.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 25px;
+			}
+
+			//NAME_INFO FORM
+
+			&__name-info {
+				height: 200px;
+				padding-top: 290px;
+
+				&-wrap {
+					padding-left: 200px;
+					margin-top: -20px;
+				}
+			}
+
+			&__name-input {
+				padding: 10px 336px 10px 30px;
+				border: none;
+				border-bottom: 2px solid;
+				margin-left: 15px;
+				outline: none;
+				font-size: 15px;
+
+				&_contacts {
+					background-color: #f2f2f2;
+					padding-right: 445px;
+					position: relative;
+				}
+			}
+
+			&__name-margin {
+				margin-left: 62px;
+			}
+
+			&__input-wrap {
+				margin-bottom: 20px;
+
+				&_contacts {
+					padding-left: 335px;
+					margin-top: -36px;
+					margin-bottom: 50px;
+
+					input {
+						position: relative;
+					}
+				}
+			}
+
+			&__contacts {
+				background-color: #f2f2f2;
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+
+			&__contacts-name {
+				margin-left: 145px;
+				display: inline-block;
+
+				&:nth-child(1) {
+					margin-top: 65px;
+				}
+
+				&:nth-child(2) {
+					margin-top: 33px;
+				}
+			}
+
+			input[type="tel"]::after {
+				content: '';
+				display: block;
+				height: 20px;
+				width: 20px;
+				position: absolute;
+				left: 0;
+				background-image: url('../img/icons/phone.png');
+			}
+
+			&__additional {
+				padding-top: 250px;
+				height: 285px;
+			}
+
+			&__additional-name {
+				margin-left: -7px;
+			}
+
+			&__additional-wrap {
+				width: 700px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin-left: 190px;
+			}
+
+			&__additional-input {
+				width: 100%;
+				padding: 10px 100px 100px 10px;
+				border: 2px solid;
+				border-right: 1px solid;
+				border-left: 1px solid;
+				margin-bottom: 40px;
+				font-size: 15px;
+			}
+
+			&__required {
+				order: 3;
+				display: block;
+				font-size: 14px;
+			}
+
+			&__btn {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+}

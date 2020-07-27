@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.min.css">
-		<title>Mishka | Catalog</title>
+    <title>Mishka | Form</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
-	<section class="header header_catalog">
+    <section class="header header_catalog">
 		<nav class="header__nav">
 			<div class="container header__menu">
 				<a href="index.html" class="header__tab-logo"><svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="113" height="46" viewBox="0 0 113 46">
@@ -61,98 +60,151 @@
 		<span class="header__subnav-item header__delivery">Бесплатная доставка по России</span>
 	</div>
 </div>
-	<h1 class="big-h header__heading header__heading_catalog">Каталог товаров</h1>
+	<h1 class="big-h header__heading header__heading_catalog">Вязание на заказ</h1>
 </div>
 </section>
 
-<section class="catalog">
+<section class="form">
 	<div class="container">
-		<div class="catalog__wrap">
-
-			<div class="product-item catalog__product-item">
-				<div class="product-item__photo">
-				<img src="img/photo-1-desktop.png" alt="photo of product">
-			</div>
-				<div class="product-item__info">
-					<h3 class="product-item__name">
-						Зайчик-попрыгайчик
-					</h3>
-					<p class="product-item__descr">
-						Рост 30 см, вес 200 г
-					</p>
-				</div>
-				<div class="product-item__price">
-					<span class="product-item__rub">1 200 руб.</span>
-					<svg class="product-item__cart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="18" viewBox="0 0 21 18">
-						<image id="cart.svg" class="cls-1" width="21" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEXRSTlMAIzMGDS0mExApChYaMAMdIJzJR6MAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AYaCxYiNEiqvQAAAIBJREFUGNNtUNESwyAIoylW20Lr/3/tUDort+Uh3OUkiRA5Fqy0YqEARjJO4KBuyMYZ2ywW7H3uKJP6XXWjB++mOxEdzJxwsuNEMj4I/0AClQiFtKQrlLx64v0EvNG3sfy4SutoPjOgvXsNHyqoYTrGG+ikKsZt63Ct48Y5NGg9PwwlBLESLjgmAAAAAElFTkSuQmCC"/>
-					  </svg>
-				</div>
+	<p class="form__description">
+		Мы будем рады воплотить в жизнь ваши пожелания! 
+		Заполните простую форму заказа и мы свяжемся с вами, 
+		чтобы уточнить детали.
+	</p>
+                          <!-- RADIO BUTTONS-->
+	<div class="form__type">
+		<span class="form__name form__type-name">Тип</span>
+		<span class="form__divider"></span>
+		<div class="form__type-radio">
+			<div class="form__radio">
+				<input type="radio" class="form__type-input" id="interior">
+				<label for="interior" class="form__label form__type-label">
+					Аксессуар для интерьера
+				</label>
 			</div>
 
-			<div class="product-item catalog__product-item">
-				<div class="product-item__photo">
-				<img src="img/photo-2-desktop.png" alt="photo of product">
-				</div>
-				<div class="product-item__info">
-					<h3 class="product-item__name">
-						Корзинка для белья
-					</h3>
-					<p class="product-item__descr">
-						Диаметр 15 см, высота 10 см
-					</p>
-				</div>
-				<div class="product-item__price">
-					<span class="product-item__rub">690 руб.</span>
-					<svg class="product-item__cart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="18" viewBox="0 0 21 18">
-						<image id="cart.svg" class="cls-1" width="21" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEXRSTlMAIzMGDS0mExApChYaMAMdIJzJR6MAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AYaCxYiNEiqvQAAAIBJREFUGNNtUNESwyAIoylW20Lr/3/tUDort+Uh3OUkiRA5Fqy0YqEARjJO4KBuyMYZ2ywW7H3uKJP6XXWjB++mOxEdzJxwsuNEMj4I/0AClQiFtKQrlLx64v0EvNG3sfy4SutoPjOgvXsNHyqoYTrGG+ikKsZt63Ct48Y5NGg9PwwlBLESLjgmAAAAAElFTkSuQmCC"/>
-					  </svg>
-				</div>
+			<div class="form__radio">
+				<input type="radio" class="form__type-input" id="toy">
+				<label for="toy" class="form__label form__type-label">
+					Детская игрушка
+				</label>
 			</div>
-
-			<div class="product-item catalog__product-item">
-				<div class="product-item__photo">
-				<img src="img/photo-3-desktop.jpg" alt="photo of product">
-				</div>
-				<div class="product-item__info">
-					<h3 class="product-item__name">
-						Большая корзинка<br>
-						для игрушек
-					</h3>
-					<p class="product-item__descr product-item__big">
-						Диаметр 30 см, высота 30 см
-					</p>
-				</div>
-				<div class="product-item__price">
-					<span class="product-item__rub">1 500 руб.</span>
-					<svg class="product-item__cart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="18" viewBox="0 0 21 18">
-						<image id="cart.svg" class="cls-1" width="21" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEXRSTlMAIzMGDS0mExApChYaMAMdIJzJR6MAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AYaCxYiNEiqvQAAAIBJREFUGNNtUNESwyAIoylW20Lr/3/tUDort+Uh3OUkiRA5Fqy0YqEARjJO4KBuyMYZ2ywW7H3uKJP6XXWjB++mOxEdzJxwsuNEMj4I/0AClQiFtKQrlLx64v0EvNG3sfy4SutoPjOgvXsNHyqoYTrGG+ikKsZt63Ct48Y5NGg9PwwlBLESLjgmAAAAAElFTkSuQmCC"/>
-					  </svg>
-				</div>
-			</div>
-
 		</div>
 	</div>
-</section>
 
-<section class="process">
-	<div class="container">
-	<div class="process__wrap">
-	<div class="process__heading">
-		<h3 class="process__h">Процесс<br>производства</h3>
+	           <!--CHECKBOXES-->
+
+	<div class="form__color">
+		<span class="form__name form__color-name">Цвет</span>
+		<span class="form__divider"></span>
+
+		<div class="form__checkbox-wrap">
+			<div class="form__checkbox">
+				<input type="checkbox" class="form__color-input" id="white" checked>
+				<label for="white" class="form__label form__type-label">
+					Белый
+				</label>
+			</div>
+
+			<div class="form__checkbox">
+				<input type="checkbox" class="form__color-input" id="grey">
+				<label for="grey" class="form__label form__type-label">
+					Серый
+				</label>
+			</div>
+
+			<div class="form__checkbox">
+				<input type="checkbox" class="form__color-input" id="tiffany">
+				<label for="tiffany" class="form__label form__type-label">
+					"Тиффани"
+				</label>
+			</div>
+
+			<div class="form__checkbox">
+				<input type="checkbox" class="form__color-input" id="black">
+				<label for="black" class="form__label form__type-label">
+					Черный
+				</label>
+			</div>
+
+			<div class="form__checkbox">
+				<input type="checkbox" class="form__color-input" id="pink">
+				<label for="pink" class="form__label form__type-label">
+					Розовый
+				</label>
+			</div>
+
+			<div class="form__checkbox">
+				<input type="checkbox" class="form__color-input" id="orange">
+				<label for="orange" class="form__label form__type-label">
+					Оранжевый
+				</label>
+			</div>
+		</div>
 	</div>
 
-	<div class="process__video">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/tSDMEgk4QBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<!--NAME-INFO SECTION-->
+
+	<div class="form__name-info">
+		<span class="form__name form__info-name">ФИО</span>
+		<span class="form__divider"></span>
+
+		<div class="form__name-info-wrap">
+
+			<div class="form__input-wrap">
+				<label class="form__name-label" for="name">Имя:
+					<input class="form__name-input form__name-margin" type="text" id="name" placeholder="Введите ваше имя*" required>
+				</label>
+			</div>
+				 
+			<div class="form__input-wrap">
+				<label class="form__name-label" for="secondname">Фамилия:
+					<input class="form__name-input" type="text" id="secondname" placeholder="Введите вашу фамилию*" required>
+				</label>
+			</div>
+
+			<div class="form__input-wrap">
+				<label class="form__name-label" for="paternity">Отчество:
+					<input class="form__name-input" type="text" id="paternity" placeholder="Отчество (по желанию)">
+				</label>
+			</div>
+		</div>
 	</div>
 
-	<div class="process__descr">
-		<p class="process__text">По просьбам наших любимых
-			 фолловеров мы сняли для вас подробное видео о 
-			 том, как появляются наши товары.</p>
+	<!--PHONE & EMAIL INPUTS-->
 
-			 <button class="btn process__btn">Сделать заказ</button>
+	<div class="form__contacts">
+		<span class="form__name form__contacts-name">Тел</span>
+		<span class="form__divider"></span>
+
+		<div class="form__input-wrap form__input-wrap_contacts">
+			<label for="phone"></label>
+			<input type="tel" id="phone" class="form__name-input form__name-input_contacts form__phone" placeholder="+7 XXX XX XX*">
+		</div>
+
+		<span class="form__name form__contacts-name">e-mail</span>
+		<span class="form__divider"></span>
+
+		<div class="form__input-wrap form__input-wrap_contacts">
+			<label for="email"></label>
+			<input type="email" id="email" class="form__name-input form__name-input_contacts" placeholder="Ваш e-mail*">
+		</div>
 	</div>
-</div>
+
+	<!--ADDITIONAL-->
+
+	<div class="form__additional">
+		<span class="form__name form__additional-name">доп</span>
+		<span class="form__divider"></span>
+
+		<div class="form__additional-wrap">
+			<input type="text" class="form__additional-input" placeholder="Опишите все ваши пожелания к заказу">
+			<span class="form__required">*Поля обязательны для заполнения</span>
+			<button class="btn form__btn">отправить заказ</button>
+		</div>
+	</div>
+		
+	
 </div>
 </section>
 
@@ -199,6 +251,5 @@
     </div>
   </div>
   </footer>
-    
 </body>
 </html>

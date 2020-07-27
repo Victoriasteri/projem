@@ -41,17 +41,6 @@
 		&__address {
 			height: 280px !important;
 			position: relative;
-
-			&::before {
-				content: '';
-				position: absolute;
-				display: block;
-				width: 47px;
-				height: 85px;
-				bottom: 51%;
-				left: -27%;
-				background: url('../img/icons/flag.png');
-			}
 		}
 
 		&__btn {
