@@ -84,7 +84,6 @@
 
 			&__color-name {
 				display: block;
-				margin-left: 150px;
 				margin-top: 63px;
 			}
 
@@ -93,7 +92,7 @@
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
-				margin-left: 348px;
+				margin-left: 160px;
 			}
 
 			&__checkbox {
@@ -128,7 +127,7 @@
 				padding-top: 290px;
 
 				&-wrap {
-					padding-left: 200px;
+					padding-left: 180px;
 					margin-top: -20px;
 				}
 			}
@@ -156,7 +155,7 @@
 				margin-bottom: 20px;
 
 				&_contacts {
-					padding-left: 335px;
+					padding-left: 180px;
 					margin-top: -36px;
 					margin-bottom: 50px;
 
@@ -174,7 +173,6 @@
 			}
 
 			&__contacts-name {
-				margin-left: 145px;
 				display: inline-block;
 
 				&:nth-child(1) {
@@ -237,25 +235,18 @@
 
 @media only screen and (max-width: 1083px) {
 	.form {
-		&__color-name {
-			margin-left: 111px;
-		}
 
 		&__checkbox-wrap {
-			margin-left: 262px;
+			margin-left: 156px;
 		}
 
 		&__name-info-wrap {
 			padding-left: 167px;
 		}
 
-		&__contacts-name {
-			margin-left: 106px;
-		}
-
 		&__input-wrap {
 			&_contacts {
-				padding-left: 265px;
+				padding-left: 160px;
 			}
 		}
 
@@ -265,41 +256,25 @@
 	}
 }
 
-@media only screen and (max-width: 992px) {
-	.form {
-		&__color-name {
-			margin-left: 56px;
-		}
 
-		&__checkbox-wrap {
-			margin-left: 210px;
-			width: 460px;
-			margin-top: -19px;
-		}
-
-		&__name-input {
-			padding-right: 175px;
-		}
-
-		&__contacts-name {
-			margin-left: 54px;
-		}
-
-		&__additional-wrap {
-			width: 590px;
-			margin-left: 134px;
-		}
-	}
-}
 
 @media only screen and (max-width: 883px) {
 	.form {
+
+		&__type-radio {
+			padding-left: 110px;
+		}
 		&__description {
 			width: 490px;
 		}
 
 		&__color-name {
-			margin-left: 89px;
+			margin-top: 40px;
+		}
+
+		&__checkbox-wrap {
+			width: 440px;
+			margin-left: 112px;
 		}
 
 		&__name-info-wrap {
@@ -310,23 +285,17 @@
 			padding-right: 120px;
 		}
 
-		&__contacts-name {
-			margin-left: 87px;
+		&__input-wrap_contacts {
+			padding-left: 112px;
 		}
 
 		&__additional-wrap {
-			width: 530px;
+			width: 477px;
+			margin-left: 122px;
 		}
 	}
 }
 
-@media only screen and (max-width: 768px) {
-	.form {
-		&__contacts-name {
-			margin-left: 26px;
-		}
-	}
-}
 
 @media only screen and (max-width: 706px) {
 	.form {
@@ -364,7 +333,8 @@
 		}
 
 		&__checkbox-wrap {
-			margin-left: 142px;
+			width: 400px;
+			margin-left: 0;
 		}
 
 		&__name-info {
@@ -395,7 +365,6 @@
 		}
 
 		&__contacts-name {
-			margin-left: 140px;
 			margin-bottom: 32px;
 		}
 
@@ -404,7 +373,7 @@
 		}
 
 		&__name-input_contacts {
-			margin-left: -137px;
+			margin-left: -115px;
 		}
 
 		&__additional {
@@ -436,7 +405,7 @@
 		}
 
 		&__required {
-			margin-bottom: 15px;
+			margin: 0 auto 15px auto;
 		}
 	}
 
